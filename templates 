@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>College Event Management System</title>
+
+<style>
+body{
+    font-family:Arial;
+    background:#f2f2f2;
+    text-align:center;
+}
+.container{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+.page{
+    display:none;
+}
+input{
+    width:90%;
+    padding:10px;
+    margin:8px;
+}
+button{
+    width:220px;
+    padding:10px;
+    background:blue;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background:green;
+}
+</style>
+
+<script>
+function showPage(pageId){
+    document.getElementById("home").style.display="none";
+    document.getElementById("register").style.display="none";
+    document.getElementById("login").style.display="none";
+    document.getElementById("admin").style.display="none";
+
+    document.getElementById(pageId).style.display="block";
+}
+
+function goHome(){
+    showPage("home");
+}
+
+window.onload=function(){
+    showPage("home");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Home Page -->
+<div id="home" class="page">
+    <h1>College Event Management System</h1>
+    <p>Welcome to College Event Management Portal</p>
+
+    <button onclick="showPage('register')">Student Registration</button><br><br>
+
+    <button onclick="showPage('login')">Student Login</button><br><br>
+
+    <button onclick="showPage('admin')">Admin Login</button>
+</div>
+
+<!-- Student Registration -->
+<div id="register" class="page">
+    <h2>Student Registration</h2>
+
+    <input type="text" placeholder="Student Name"><br>
+    <input type="text" placeholder="Register Number"><br>
+    <input type="text" placeholder="Department"><br>
+    <input type="email" placeholder="Email"><br>
+    <input type="password" placeholder="Password"><br>
+
+    <button>Register</button><br><br>
+    <button onclick="goHome()">Back</button>
+</div>
+
+<!-- Student Login -->
+<div id="login" class="page">
+    <h2>Student Login</h2>
+
+    <input type="email" placeholder="Email"><br>
+    <input type="password" placeholder="Password"><br>
+
+    <button>Login</button><br><br>
+    <button onclick="goHome()">Back</button>
+</div>
+
+<!-- Admin Login -->
+<div id="admin" class="page">
+    <h2>Admin Login</h2>
+
+    <input type="text" placeholder="Admin Username"><br>
+    <input type="password" placeholder="Password"><br>
+
+    <button>Login</button><br><br>
+    <button onclick="goHome()">Back</button>
+</div>
+
+</div>
+
+</body>
+</html>
