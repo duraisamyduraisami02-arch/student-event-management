@@ -1,66 +1,14 @@
-static.css
-
-
-
-
-body{
-    font-family:Arial,sans-serif;
-    background:#f2f2f2;
-    margin:0;
-    padding:0;
-}
-
-.container{
-    width:500px;
-    margin:50px auto;
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 10px gray;
-    text-align:center;
-}
-
-h1,h2{
-    color:#1e88e5;
-}
-
-input{
-    width:90%;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
-
-button{
-    background:#1e88e5;
-    color:white;
-    padding:10px 20px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-}
-
-button:hover{
-    background:#1565c0;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-th{
-    background:#1e88e5;
-    color:white;
-}
-
-td,th{
-    padding:10px;
-    text-align:center;
-}
-
-a{
-    text-decoration:none;
-    color:#1e88e5;
-    font-weight:bold;
-}
+Student Event Management System – Short Explanation
+A Student Event Management System is a software application that helps colleges and schools organize and manage events efficiently. It allows students to register for events online, while administrators can create events, manage registrations, and view participant details. The system reduces paperwork, saves time, and makes event management simple and organized.
+Main Features:
+Student Registration & Login
+Admin Login
+Create and Manage Events
+Event Registration
+View Participants
+Event Updates and Notifications
+Technologies (Example):
+Frontend: HTML, CSS, JavaScript
+Backend: Python (Flask)
+Database: MySQL
+Objective: To make event registration and management faster, easier, and more efficient for both students and college administrators.
