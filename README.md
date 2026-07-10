@@ -1,1 +1,2 @@
-# student-event-management
+static.css
+body{font-family:Arial}
